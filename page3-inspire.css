@@ -1,0 +1,67 @@
+body{
+  margin-left: 100px;
+  margin-right: 100px;
+ background-color: rgb(255,229,251);
+}
+
+div.jumbotron{
+ background-image: url("bake-donut22.jpg");
+ background-size: 100%;
+}
+h1.display-4{
+  font-weight: bold;
+  color: white;
+}
+h2.lead{
+  color: white;
+}
+
+
+.card-img-top{
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.card:hover .overlay {
+  opacity: 0.7;
+}
+
+#text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#textsmall {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
