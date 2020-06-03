@@ -11,10 +11,15 @@ h2.lead{
   color: white;
 }
 
+.col-md-4{
+  height: 50%;
+}
 
+#longcard1{
+  height: 50%;
+}
 #longcard{
-  width: 70%;
-  height: 70%;
+  height: 50%;
     object-fit: cover;
 }
 
